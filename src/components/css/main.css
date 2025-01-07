@@ -1,32 +1,62 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* =================================================================== 
+ *  Ethos Main Stylesheet
+ *  Template Ver. 1.0.0
+ *  11-05-2019
+ *  ------------------------------------------------------------------
+ *
+ *  TOC:
+ *  # custom block grid STACK breakpoints
+ *  # base style overrides
+ *    ## links
+ *  # typography & general theme styles
+ *    ## Lists
+ *    ## responsive video container
+ *    ## floated image 
+ *    ## tables
+ *    ## Spacing
+ *  # preloader
+ *  # forms
+ *    ## Style Placeholder Text
+ *    ## Change Autocomplete styles in Chrome
+ *  # buttons
+ *  # additional components
+ *    ## additional typo styles 
+ *    ## skillbars
+ *    ## alert box 
+ *  # Common and Reusable Styles
+ *  # site header
+ *    ## header logo
+ *    ## main navigation
+ *    ## mobile menu toggle
+ *    ## download resume button
+ *  # hero
+ *    ## hero social
+ *    ## hero scroll
+ *    ## animate intro content
+ *    ## animations
+ *  # about section
+ *    ## career position
+ *  # services section
+ *    ## services list
+ *  # portfolio
+ *    ## portfolio list
+ *  # testimonials
+ *  # CTA
+ *  # footer
+ *    ## contact block
+ *    ## copyright
+ *    ## go top
+ *
+ * =================================================================== */
 
 
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
 
 
-
-body {
-  margin: 0;
-}
 /* ===================================================================
  * # custom block grid STACK breakpoints
  *
  * ------------------------------------------------------------------- */
- @media screen and (max-width:1000px) {
+@media screen and (max-width:1000px) {
   .block-1000-full > .column {
     -ms-flex: 0 0 100%;
     -webkit-box-flex: 0;
@@ -504,12 +534,6 @@ button,
 .btn {
   margin-bottom: 1.6rem;
 }
-
-/* button,
-.btn:hover {
-  background-color: green;
-  color: black
-} */
 
 fieldset {
   margin-bottom: 1.6rem;
@@ -1145,7 +1169,7 @@ input::-moz-focus-inner {
   background-repeat: no-repeat;
   background: center center;
   background-size: contain;
-  background-image: url("/public/ivie.png");
+  /* background-image: url(../images/icons/icon-quote.svg); */
   position: absolute;
   top: 4rem;
   left: 4rem;
@@ -1688,14 +1712,6 @@ input::-moz-focus-inner {
   padding-left: 10px;
 }
 
-.header-nav-wrap.is-open {
-  display: block;
-}
-
-.header-nav-wrap.is-closed {
-  display: none; 
-}
-
 .header-nav {
   list-style: none;
   font-family: "Gothic A1", sans-serif;
@@ -1828,10 +1844,8 @@ input::-moz-focus-inner {
 
 .header-content .btn:hover,
 .header-content .btn:focus {
-  background-color: #FF8A8A !important;
-  border-color: #FF8A8A !important;
-  color: black;
-  font-size: 12px
+  background-color: #f9861a !important;
+  border-color: #f9861a !important;
 }
 
 /* ------------------------------------------------------------------- 
@@ -3466,6 +3480,3 @@ html.no-csstransitions .hero-content {
   }
 
 }
-
-
-
